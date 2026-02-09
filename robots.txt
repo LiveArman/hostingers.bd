@@ -27,4 +27,4 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-Sitemap: https://hostingerbd.com/sitemap.xml
+Sitemap: https://hostingers.bd/sitemap.xml
