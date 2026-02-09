@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talk to Hostinger Hosting</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        .carousel-container {
+            overflow: hidden;
+            position: relative;
+        }
+        .carousel-slide {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .testimonial-card {
+            min-width: 100%;
+        }
+        @media (min-width: 768px) {
+            .testimonial-card {
+                min-width: 33.333%;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+<section class="py-16 bg-gradient-to-br from-indigo-900 via-blue-800 to-blue-600">
+    <div class="container mx-auto px-4">
+        <!-- Heading -->
+        <div class="text-center mb-16 relative">
+            <h2 class="text-3xl font-bold text-center mb-12 text-white">What Our Clients Say</h2>
+            <p class="text-lg md:text-xl text-indigo-100 max-w-3xl mx-auto leading-relaxed">
+                Discover why our community loves hosting with us – real stories, real experiences.
+            </p>
+        </div>
+        
+        <!-- Testimonial Carousel -->
+        <div class="carousel-container max-w-4xl mx-auto">
+            <div class="carousel-slide" id="testimonial-container"></div>
+
+            <!-- Navigation Buttons -->
+            <button id="prevBtn" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-full hover:bg-blue-600">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button id="nextBtn" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-full hover:bg-blue-600">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- Dots Navigation -->
+        <div id="dots-container" class="flex justify-center mt-6 space-x-2"></div>
+    </div>
+</section>
+
+<script src="reviews.js"></script>
+
+</body>
+</html>

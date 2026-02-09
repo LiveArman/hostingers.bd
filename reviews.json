@@ -1,0 +1,26 @@
+[
+    {
+        "name": "John Doe",
+        "initials": "JD",
+        "position": "CEO, Tech Corp",
+        "review": "Amazing service and great attention to detail. Highly recommended!"
+    },
+    {
+        "name": "Jane Smith",
+        "initials": "JS",
+        "position": "Marketing Director",
+        "review": "The team exceeded our expectations. Professional and reliable."
+    },
+{
+    "name": "Mr Arman",
+    "initials": "MR",
+    "position": "Marketing Director",
+    "review": "The arman.com.bd team exceeded our expectations. Professional and reliable."
+},
+    {
+        "name": "Mike Brown",
+        "initials": "MB",
+        "position": "Entrepreneur",
+        "review": "Outstanding experience from start to finish. Truly exceptional!"
+    }
+]

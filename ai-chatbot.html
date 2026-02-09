@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot Support | HostingerBD.com</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <style>
+        body { background-color: #f8fafc; }
+        .chat-bubble { max-width: 80%; padding: 12px 18px; border-radius: 1rem; margin-bottom: 10px; }
+        .user-msg { background-color: #4f46e5; color: white; align-self: flex-end; }
+        .bot-msg { background-color: #e0e7ff; color: #1e3a8a; align-self: flex-start; }
+        .chat-container { max-height: 450px; overflow-y: auto; }
+    </style>
+</head>
+<body class="text-gray-800" onload="AOS.init();">
+
+<header class="bg-indigo-700 text-white p-6 text-center shadow-md">
+    <h1 class="text-3xl font-bold"><i class="fas fa-robot mr-2"></i>HostingerBD AI Chatbot Support</h1>
+    <p class="mt-1">24/7 Smart Assistant for Hosting, Domain & Payment Help</p>
+</header>
+
+<main class="max-w-3xl mx-auto mt-6 p-4 bg-white rounded-lg shadow space-y-6" data-aos="fade-up">
+    
+    <!-- Chat Container -->
+    <div class="chat-container flex flex-col space-y-2 p-3 border border-gray-300 rounded-md bg-gray-50" id="chat-box">
+        <div class="bot-msg chat-bubble">
+            👋 Hi! I'm your HostingerBD AI Support Bot.<br>
+            How can I help you today? (Example: Hosting plans, coupon codes, payment via bKash, domain help etc.)
+        </div>
+    </div>
+
+    <!-- Chat Input -->
+    <div class="flex items-center space-x-2">
+        <input id="user-input" type="text" placeholder="Type your question..." class="w-full px-4 py-2 border rounded focus:outline-none focus:ring focus:ring-indigo-300">
+        <button onclick="sendMessage()" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition"><i class="fas fa-paper-plane"></i></button>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="text-center p-4 bg-indigo-700 text-white mt-10">
+    <p>&copy; 2025 HostingerBD.com | AI Chat Support Powered by Open Source & Custom AI Tools</p>
+</footer>
+
+<script>
+    function sendMessage() {
+        var userText = $("#user-input").val().trim();
+        if (userText === "") return;
+
+        $("#chat-box").append('<div class="user-msg chat-bubble">' + userText + '</div>');
+        $("#user-input").val("");
+        $("#chat-box").scrollTop($("#chat-box")[0].scrollHeight);
+
+        // Simulated AJAX AI Response (Demo)
+        setTimeout(function() {
+            var botResponse = getAIResponse(userText);
+            $("#chat-box").append('<div class="bot-msg chat-bubble">' + botResponse + '</div>');
+            $("#chat-box").scrollTop($("#chat-box")[0].scrollHeight);
+        }, 1000);
+    }
+
+    function getAIResponse(text) {
+        text = text.toLowerCase();
+        if (text.includes("coupon") || text.includes("discount")) {
+            return "🎉 You get an extra 20% discount on Hostinger plans through our referral link. Visit our website for the link.";
+        } else if (text.includes("payment") || text.includes("bkash")) {
+            return "✅ We accept bKash, Nagad & Binimoy for Hostinger payments. Check our 'Payment Help' page.";
+        } else if (text.includes("domain")) {
+            return "🌐 We help with Hostinger domain registration, transfer & DNS setup. Tell me what you want to do.";
+        } else if (text.includes("wordpress")) {
+            return "📝 For WordPress hosting setup on Hostinger, go to your Hostinger dashboard > Auto Installer > WordPress.";
+        } else if (text.includes("contact")) {
+            return "📞 Contact us at contact@hostingerbd.com or WhatsApp: +8801974946747.";
+        } else {
+            return "🤖 Sorry, I couldn't understand that. Please rephrase or visit our website for full FAQs.";
+        }
+    }
+
+    $(document).keypress(function(e) {
+        if (e.which == 13) {
+            sendMessage();
+        }
+    });
+</script>
+
+</body>
+</html>

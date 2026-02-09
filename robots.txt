@@ -1,0 +1,30 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /cart/
+Disallow: /checkout/
+Allow: /
+
+# AI LLM & Crawler Allowance
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: GeminiBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://hostingerbd.com/sitemap.xml

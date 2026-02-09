@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home -->
+  <url>
+    <loc>https://hostingerbd.com/</loc>
+    <lastmod>2025-07-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- Whitepaper -->
+  <url>
+    <loc>https://hostingerbd.com/whitepaper.pdf</loc>
+    <lastmod>2025-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Premium Hosting -->
+  <url>
+    <loc>https://hostingerbd.com/premium-hosting</loc>
+    <lastmod>2025-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Business Hosting -->
+  <url>
+    <loc>https://hostingerbd.com/business-hosting</loc>
+    <lastmod>2025-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- VPS Hosting -->
+  <url>
+    <loc>https://hostingerbd.com/vps</loc>
+    <lastmod>2025-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Domain Registration -->
+  <url>
+    <loc>https://hostingerbd.com/domain-registration</loc>
+    <lastmod>2025-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Affiliate Deals -->
+  <url>
+    <loc>https://hostingerbd.com/affiliate-deals</loc>
+    <lastmod>2025-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- AI Chatbot Support -->
+  <url>
+    <loc>https://hostingerbd.com/ai-chatbot</loc>
+    <lastmod>2025-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- AEO FAQ Page -->
+  <url>
+    <loc>https://hostingerbd.com/hostinger-faq</loc>
+    <lastmod>2025-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://hostingerbd.com/contact</loc>
+    <lastmod>2025-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Terms -->
+  <url>
+    <loc>https://hostingerbd.com/terms</loc>
+    <lastmod>2025-07-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+</urlset>
